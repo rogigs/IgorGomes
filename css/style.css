@@ -1,0 +1,290 @@
+:root {
+    --blue-dark: rgba(2, 83, 185, 1);
+    --blue-light: rgba(4, 189, 228, 1);
+    --light: #fff;
+    --dark: #3f3d56;
+}
+
+/* Just v1.0 */
+
+.disabled {
+    opacity: 0.2;
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--light);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    color: var(--dark);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    height: 50px;
+}
+
+header h1 {
+    width: 230px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* Create the gradient. */
+    background-image: linear-gradient(45deg, var(--dark), var(--blue-light));
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+header nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+a {
+    font-size: 14px;
+    text-decoration: none;
+    color: inherit;
+    transition: color 1s;
+    padding: 5px;
+}
+
+header nav a:hover {
+    color: var(--blue-light);
+    border-bottom: 2px solid var(--blue-light);
+}
+
+section {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+section .container-row:first-child {
+    padding-top: 96px;
+}
+
+section .container-row {
+    padding-top: 160px;
+}
+
+section .container-row article {
+    margin-right: 32px;
+    width: 100%;
+}
+
+section .container-row article:nth-child(2) {
+    padding-left: 32px;
+}
+
+section .container-row article h1 {
+    font-size: 36px;
+}
+
+section .container-row article h3 {
+    font-size: 16px;
+}
+
+section .container-row article h1, h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 64px;
+}
+
+section .container-row article p {
+    padding-top: 16px;
+    line-height: 32px;
+    text-indent: 32px;
+}
+
+section .container-row article button {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+section .container-row .container-card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    width: 100%;
+}
+
+section .container-row .container-card .card {
+    width: 20%;
+    padding: 32px;
+    min-height: 270px;
+    box-shadow: 0px 4px 16px var(--dark);
+    transition: box-shadow 1s, width 1s;
+}
+
+section .container-row .container-card .card:hover {
+    box-shadow: 0px 4px 16px var(--blue-light);
+    width: 22%;
+}
+
+section .container-row .container-card .card h2 {
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+section .container-row .container-card .card ul li {
+    padding-bottom: 16px;
+    margin-left: 8px;
+    list-style: square;
+}
+
+section .container-row .title-center {
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+section .container-row article div p {
+    padding-top: 48px;
+    margin-left: -32px;
+}
+
+footer {
+    line-height: 80px;
+    padding-top: 160px;
+    text-align: center;
+}
+
+ion-icon {
+    padding: 10px;
+}
+
+/* Generic */
+
+button {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 48px;
+    width: 160px;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    transition: color 1s;
+}
+
+button:hover {
+    box-shadow: 0px 0px 16px var(--dark);
+}
+
+#aboutMe {
+    color: var(--light);
+    background-color: var(--blue-light);
+    margin-right: 16px;
+}
+
+#aboutMe:hover {
+    color: var(--dark);
+    background-color: var(--light);
+    border: 2px solid var(--blue-light);
+}
+
+#cv {
+    background-color: var(--light);
+    border: 2px solid var(--blue-light);
+}
+
+#cv:hover {
+    color: var(--light);
+    background-color: var(--blue-light);
+    border: 0px;
+}
+
+img {
+    height: 350px;
+    width: 40%;
+    transition: width 2s;
+}
+
+img:hover {
+    width: 45%;
+}
+
+/* ------------ Medias queries  ----------------- */
+
+/* Telefones em paisagem e abaixo */
+
+@media (max-width: 480px) {
+    /* estilos aqui */
+}
+
+/* Telefones em paisagem a tablet em retrato */
+
+@media (max-width: 767px) {
+    /* estilos aqui */
+    img {
+        padding-top: 32px;
+        width: 100%;
+    }
+    img:hover {
+        width: 90%;
+    }
+    .container-row:nth-child(2) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .container-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .card {
+        width: 85% !important;
+        margin-bottom: 32px;
+    }
+    .card:hover {
+        width: 80% !important;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        transition: border 1s;
+    }
+    a {
+        padding-top: 30px;
+    }
+}
+
+/* Tablet em retrato a paisagem e desktop */
+
+@media (min-width: 768px) {
+    .container-row {
+        display: flex;
+    }
+}
