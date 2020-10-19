@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <title>Igor Gomes | Desenvolvedor WEB</title>
 </head>
@@ -19,10 +20,10 @@
         <nav>
             <a href="#home">Home</a>
             <a href="#about">Sobre mim</a>
-            <a href="#know">Conhecimentos</a>
+            <a href="#experience">Experiências</a>
             <a href="#projects">Projetos</a>
-            <a href="#" class="disabled">Blog</a>
-            <a href="#contact">Contato</a>
+            <!-- <a href="#home" class="disabled">Blog</a> -->
+            <a href="#contacts">Contatos</a>
         </nav>
     </header>
 
@@ -35,13 +36,12 @@
                 <a href="#about">
                     <button id="aboutMe">Sobre mim</button>
                 </a>
-                <button id="cv" class="disabled">Veja meu CV</button>
             </article>
-            <img src="images/coding.svg" alt="">
+            <img src="images/coding.svg" alt="coding">
         </div>
 
         <div class="container-row">
-            <img src="images/personal_text.svg" alt="">
+            <img src="images/personal_text.svg" alt="personal_text">
             <article id="about">
                 <h1>Um pouco sobre mim...</h1>
                 <p>Sou um jovem amante da tecnologia, venho estudando sobre desde meus 15 anos quando entrei
@@ -55,35 +55,10 @@
 
 
         <div class="container-row">
-            <article id="know">
-                <h1 class="title-center">Conhecimentos</h1>
-                <div class="container-card">
-                    <div class="card">
-                        <h2>Front-end</h2>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>React/Redux</li>
-                        </ul>
-                    </div>
-                    <div class="card">
-                        <h2>Back-end</h2>
-                        <ul>
-                            <li>Node.js</li>
-                            <li>Python</li>
-                            <li>Flask</li>
-                            <li>Java</li>
-                            <li>SQL</li>
-                        </ul>
-                    </div>
-                    <div class="card">
-                        <h2>Outros</h2>
-                        <ul>
-                            <li>Orientação a objetos</li>
-                            <li>TDD</li>
-                        </ul>
-                    </div>
+            <article id="experience">
+                <h1 class="title-center">Experiências</h1>
+                <div id="cards" class="container-card">
+                    <!-- function getExperiences -->
                 </div>
             </article>
         </div>
@@ -91,14 +66,23 @@
         <div class="container-row">
             <article id="projects">
                 <h1 class="title-center">Projetos</h1>
-                <i>
-                    <h3>Por enquanto só tenho projetos disponíveis no Github, dê uma olhada... &nbsp;&nbsp;
-                        <a href="https://github.com/rogigs" target="_blank">
-                            <ion-icon name="logo-github" size="large"></ion-icon>
+                <ul>
+                    <li>Calculadora Teorema de Pitágoras:
+                        <a href="https://rogigs.github.io/calTeoremaPitagoras/" target="_blank">
+                            <ion-icon  style="height: 30px; padding: 0;" name="arrow-redo" size="large"></ion-icon>
                         </a>
-                    </h3>
-                </i>
+                    </li>
+                    <li>
+                        <i>
+                            Grande parte dos meus projetos estão hospedados no Github. Dê uma olhada:
+                            <a href="https://github.com/rogigs" target="_blank">
+                                <ion-icon style="height: 30px; padding: 0;" name="logo-github" size="large">
+                                </ion-icon>
+                            </a>
 
+                        </i>
+                    </li>
+                </ul>
             </article>
         </div>
     </section>
@@ -107,7 +91,7 @@
         <div>
             <h1 class="logo animate__animated animate__pulse animate__infinite">Igor Gomes</h1>
         </div>
-        <h3>Fale Comigo !</h3>
+        <h3>Fale Comigo, sinta-se a vontade !</h3>
         <a href="https://www.linkedin.com/in/igor-gomes-592924184/" target="_blank">
             <ion-icon name="logo-linkedin" size="large"></ion-icon>
         </a>
@@ -118,6 +102,8 @@
             <ion-icon name="logo-whatsapp" size="large"></ion-icon>
         </a>
     </footer>
+
+    <script src="js/experiences.js"></script>
 
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 
