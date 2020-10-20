@@ -18,13 +18,14 @@ const experiencesPro = [
         title: "Estágiario | Desenvolvedor WEB",
         company: "Cromai",
         time: "01/2020 - Atuando no momento",
-        acting: "Desenvolvimento da plataforma WEB responsável por mostrar os diagnóstico das plantações aos clientes"
+        acting: "Desenvolvimento da plataforma WEB responsável pela visualizaçao de diagnóstico das fazendas."
         
     },
     {
         title: "Mentoria",
-        time: "+10 horas",
-        acting: "Auxílio a compreender lógica de programação com a linguagem Python e os paradigmas de Orientação a Objetos"
+        company: "",
+        time: "+10 horas de aulas dadas",
+        acting: "Auxílio na aprendizagem de lógica de programação com a linguagem Python e os paradigmas de Orientação a Objetos"
     },
 ]
 
@@ -36,6 +37,7 @@ function getExperiencesProfessional() {
         componentExperience.innerHTML += `<div class="card">` +
             `<h2>${experiencesPro[i].title}</h2>` +
             `<ul>` +
+            `<li><h6>${experiencesPro[i].company}</h6></li>` +
             `<li><h6>${experiencesPro[i].time}</h6></li>` +
             `<li><h6>${experiencesPro[i].acting}</h6></li>` +
 

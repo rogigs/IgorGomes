@@ -1,6 +1,6 @@
 :root {
     --blue-dark: rgba(2, 83, 185, 1);
-    --blue-light: rgba(4, 189, 228, 1);
+    --blue-light: rgb(4, 189, 228);
     --light: #fff;
     --dark: #3f3d56;
 }
@@ -138,7 +138,7 @@ section .container-row .container-card {
 }
 
 section .container-row .container-card .card {
-    width: 21%;
+    width: 22%;
     padding: 32px;
     min-height: 350px;
     box-shadow: 0px 4px 16px var(--dark);
