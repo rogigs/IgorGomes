@@ -15,18 +15,12 @@ const experiencesTec = [
 
 const experiencesPro = [
     {
-        title: "Estágiario | Desenvolvedor WEB",
+        title: "Estagiário | Desenvolvedor WEB",
         company: "Cromai",
         time: "01/2020 - Atuando no momento",
-        acting: "Desenvolvimento da plataforma WEB responsável pela visualizaçao de diagnóstico das fazendas."
-        
-    },
-    {
-        title: "Mentoria",
-        company: "",
-        time: "+10 horas de aulas dadas",
-        acting: "Auxílio na aprendizagem de lógica de programação com a linguagem Python e os paradigmas de Orientação a Objetos"
-    },
+        acting: "Desenvolvimento da plataforma WEB de visualização de diagnósticos " + 
+            "e Desktop de criação de diagnósticos, ambas utilizando React no front-end e Flask no back-end "
+    }
 ]
 
 const componentExperience = document.getElementById("cards")
